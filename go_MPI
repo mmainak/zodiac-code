@@ -1,0 +1,20 @@
+#
+# This is the "go" script for diablo.
+# Such a shell script makes repetitive compiling and running
+# easy while debugging the code in a unix-based environment.
+#
+#export LD_LIBRARY_PATH=/work2/Bishakh/FFTW_2/lib:$LD_LIBRARY_PATH
+
+path="/home/bishak/Documents/ANU_work/Rayleigh_benerd_periodic/"
+#make clean
+rundir="$path"/channel_flow
+codedir="$path"
+#rm grid_def
+#ln -s $rundir/grid_def grid_def
+cd $codedir
+make 
+cd $rundir
+mpirun -np 4 $codedir/diablo < input.dat  > output.dat &
+
+
+ 

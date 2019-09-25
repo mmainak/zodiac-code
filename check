@@ -1,0 +1,1 @@
+tail -f channel_flow/output.dat 

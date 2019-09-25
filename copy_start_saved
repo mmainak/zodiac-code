@@ -1,0 +1,10 @@
+for i in last_saved/*.saved
+do
+ k=`echo $i`
+ echo $k
+# j=`echo $k | sed "s/.saved//g"`
+  j=`echo $k | sed "s/last_saved//g"`
+  j=`echo $j | sed "s/.saved//g"`
+ echo $j 
+ cp $k last_saved$j.start
+done

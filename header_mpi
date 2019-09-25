@@ -1,0 +1,8 @@
+!----*|--.---------.---------.---------.---------.---------.---------.-|-------|! MPI variables
+!----*|--.---------.---------.---------.---------.---------.---------.-|-------|
+        INTEGER :: NPROCS, RANK
+        INTEGER :: status(MPI_STATUS_SIZE), IERROR
+        INTEGER :: PNY,JOFF
+
+        COMMON /MPI_VARS/ NPROCS,RANK,STATUS,IERROR,PNY,JOFF
+

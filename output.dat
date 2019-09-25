@@ -1,0 +1,178 @@
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+              ****** WELCOME TO DIABLO ******
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+ Note that this code is distributed under the GNU General Public License.
+ No warranty is expressed or implied.
+ 
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+          10
+ MPI Initialized, NPROCS,RANK:           16          11
+ MPI Initialized, NPROCS,RANK:           16           5
+ MPI Initialized, NPROCS,RANK:           16           7
+ MPI Initialized, NPROCS,RANK:           16           0
+ #############################################
+ Box size: LX =   3.00000000000000      , LY =   6.00000000000000      , LZ =
+   1.50000000000000      .
+ #############################################
+ Grid size: NX =         512 , NY =          32 , NZ =         128 .
+ Inclined angle beta   10.0000000000000     
+ #############################################
+ Ceartion of a new flowfield T
+   Scalar number:            1
+   Final Richardson number:    1.00000000000000     
+   Prandlt number:    14.0000000000000     
+   Gravity:    10.0000000000000     
+ MPI Initialized, NPROCS,RANK:           16           3
+ MPI Initialized, NPROCS,RANK:           16          13
+ MPI Initialized, NPROCS,RANK:           16           2
+ MPI Initialized, NPROCS,RANK:           16           4
+ MPI Initialized, NPROCS,RANK:           16          14
+ MPI Initialized, NPROCS,RANK:           16           1
+ MPI Initialized, NPROCS,RANK:           16          10
+ MPI Initialized, NPROCS,RANK:           16           9
+ MPI Initialized, NPROCS,RANK:           16           6
+ MPI Initialized, NPROCS,RANK:           16           8
+ MPI Initialized, NPROCS,RANK:           16          15
+ MPI Initialized, NPROCS,RANK:           16          12
+   Density Gradient:   0.000000000000000E+000
+   Ratio gravity/rho :   8.000000000000000E-004
+ #############################################
+   Scalar number:            2
+   Final Richardson number:    1.00000000000000     
+   Prandlt number:    500.000000000000     
+   Gravity:    10.0000000000000     
+   Density Gradient:   0.120000000000000     
+   Ratio gravity/rho :  -8.000000000000000E-003
+ #############################################
+   Background Temp:    1.00000000000000     
+   Background Salinity:    35.0000000000000     
+ Fourier in X
+ Fourier in Z
+ Finite-difference in Y
+ I am here ??????
+ I am here ??????
+ I am here ??????
+ I am here ??????
+ I am here ??????
+ I am here ??????
+ checking netcdf
+ I am reading netcdf now           0
+ I am here ??????
+ I am here ??????
+ i am here so far         139
+ Sponge   6.01878667260000     
+ I am here ??????
+ I am here ??????
+ I am here ??????
+ I am here ??????
+ I am here ??????
+ I am here ??????
+ I am here ??????
+ I am here ??????
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 19068 on node r56 exited on signal 9 (Killed).
+--------------------------------------------------------------------------

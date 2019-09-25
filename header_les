@@ -1,0 +1,57 @@
+!----*|--.---------.---------.---------.---------.---------.---------.-|-------|! Parameters for Large Eddy Simulation
+!----*|--.---------.---------.---------.---------.---------.---------.-|-------|
+
+! Include simulation variables
+      include 'header'
+
+! Variables for dynamic Smagrinsky
+      REAL*8 numerator(0:NX+1,0:NZ+1,0:NY+1)
+      REAL*8 denominator(0:NX+1,0:NZ+1,0:NY+1)
+      REAL*8 C_DYN(0:NY+1),C_DYN_TH(0:NY+1,1:N_TH)
+      REAL*8 C_DYN_H(0:NY+1),C_DYN_V(0:NY+1)
+      REAL*8 U_2BAR(0:NX+1,0:NZ+1,0:NY+1,1:3)
+      REAL*8 U_BAR_TIL(0:NX+1,0:NZ+1,0:NY+1,1:3)
+      REAL*8 U_4BAR(0:NX+1,0:NZ+1,0:NY+1,1:3)
+      REAL*8 TEMP(0:NX+1,0:NZ+1,0:NY+1),Mij(0:NX+1,0:NZ+1,0:NY+1)
+      REAL*8 TEMP_1(0:NX+1,0:NZ+1,0:NY+1)
+      REAL*8 TEMP_2(0:NX+1,0:NZ+1,0:NY+1)
+      REAL*8 S_2BAR(0:NX+1,0:NZ+1,0:NY+1)
+      REAL*8 Sij_mean(0:NY+2,1:6)
+      REAL*8 TAU_mean(0:NY+2,1:6)
+
+! Variables for plane-averaged momentum budget
+      real*8 NU_U1(0:NY+1)
+      real*8 NU_U3(0:NY+1)
+      real*8 DELTA_YF(0:NY+1) 
+! For the TKE part
+      real*8 tke_sgs_mm(0:NY+1),tke_sgs_evm(0:NY+1)
+
+      REAL*8  Sij(0:NX+1,0:NZ+1,0:NY+2,1:6)
+      REAL*8  ST_rij(0:NX+1,0:NZ+1,0:NY+2,1:6)
+
+      REAL*8 cross
+
+      COMPLEX*16 CSij(0:NX/2,0:NZ+1,0:NY+2,1:6)
+      COMPLEX*16 CTEMP(0:NX/2,0:NZ+1,0:NY+1)
+      COMPLEX*16 CTEMP_1(0:NX/2,0:NZ+1,0:NY+1)
+      COMPLEX*16 CTEMP_2(0:NX/2,0:NZ+1,0:NY+1)
+      COMPLEX*16 CMij(0:NX/2,0:NZ+1,0:NY+1)
+
+      EQUIVALENCE (Sij,CSij)
+     &         ,(TEMP,CTEMP)
+     &         ,(Mij,CMij)
+     &         ,(TEMP_1,CTEMP_1)
+     &         ,(TEMP_2,CTEMP_2) 
+
+!      COMMON /LES_VARS_1/ S_2BAR,U_2BAR,U_BAR_TIL,Sij
+
+!      COMMON /LES_VARS_2/ S1,C_DYN,C_DYN_TH
+     
+ 
+!      COMMON /LES_VARS_3/ C_DYN_H,C_DYN_V,DELTA_YF
+
+
+      COMMON /LES_VARS/ S_2BAR,U_2BAR,U_BAR_TIL,Sij,S1,C_DYN,C_DYN_TH
+     &       ,C_DYN_H,C_DYN_V,DELTA_YF
+
+

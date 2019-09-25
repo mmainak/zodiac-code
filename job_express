@@ -1,0 +1,22 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -P x52
+#PBS -l ncpus=16
+#PBS -l vmem=20044mb
+#PBS -l walltime=00:40:00 
+#PBS -j oe
+#PBS -r n
+#STANDARD ERROR
+#PBS -e test.err
+#JOB NAME
+#PBS -N data_3D
+
+rm  3D_output.dat  data_3D.o*
+
+cd $PBS_O_WORKDIR
+
+#mpirun -n 1 ./split_field > output_split.dat &
+mpirun -n 1 ./data_collect_3D > 3D_output.dat &
+tail -f 3D_output.dat
+
+##mpirun

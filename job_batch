@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -q normal
+#PBS -P x52
+#PBS -l ncpus=8
+#PBS -l vmem=10044mb
+#PBS -l walltime=06:00:00 
+#PBS -j oe
+#PBS -r n
+#STANDARD ERROR
+#PBS -e test.err
+#JOB NAME
+#PBS -N melting_DD
+
+##rm -f last_saved/* 
+
+rm *.o* fort.*   output.txt out_screen.txt 
+
+cd $PBS_O_WORKDIR
+
+
+mpirun -n 8 ./diablo > output.dat &
+tail -f output.dat
+
+##mpirun
